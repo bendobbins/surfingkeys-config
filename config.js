@@ -29,9 +29,9 @@ const {
 // ---- Settings ----
 Hints.setCharacters('asdfgyuiopqwertnmzxcvb');
 
-settings.defaultSearchEngine = 'd';
+//settings.defaultSearchEngine = 'd';
 settings.hintAlign = 'left';
-settings.omnibarPosition = 'bottom';
+//settings.omnibarPosition = 'bottom';
 settings.focusFirstCandidate = false;
 settings.focusAfterClosed = 'last';
 settings.scrollStepSize = 200;
@@ -40,15 +40,27 @@ settings.modeAfterYank = 'Normal';
 
 // ---- Map -----
 // --- Hints ---
+
+map('j', 'h');
+map('k', 'j');
+map('l', 'k');
+map(';', 'l');
+vmap('j', 'h');
+vmap('k', 'j');
+vmap('l', 'k');
+vmap(';', 'l');
+vmap('>', '$');
+vmap('<', '^');
+imap('jj', '<ESC>');
+map('K', 'd');
+map('L', 'e');
+
 // Open Multiple Links
 map('<Alt-f>', 'cf');
 
 // Yank Link URL
 map('<Alt-y>', 'ya');
 map('<Alt-u>', 'ya');
-
-// Open Hint in new tab
-map('F', 'C');
 
 // --- Nav ---
 // Open Clipboard URL in current tab
@@ -58,22 +70,22 @@ mapkey('p', "Open the clipboard's URL in the current tab", () => { Clipboard.rea
 map('P', 'cc');
 
 // Current tab Omnibar
-map('o', 'go');
+map('o', 'og');
 
 // History Back/Forward
-map('H', 'S');
-map('L', 'D');
+//map('H', 'S');
+//map('L', 'D');
 
 // Scroll Page Down/Up
 mapkey("<Ctrl-d>", "Scroll down", () => { Normal.scroll("pageDown"); });
 mapkey("<Ctrl-u>", "Scroll down", () => { Normal.scroll("pageUp"); });
 
 // Next/Prev Page
-map('K', '[[');
-map('J', ']]');
+//map('K', '[[');
+//map('J', ']]');
 
 // Open Chrome Flags
-mapkey('gF', '#12Open Chrome Flags', () => { tabOpenLink("chrome://flags/"); });
+//mapkey('gF', '#12Open Chrome Flags', () => { tabOpenLink("chrome://flags/"); });
 
 // --- Tabs ---
 // Tab Delete/Undo
@@ -86,15 +98,15 @@ map('>', '>>');
 map('<', '<<');
 
 // Tab Next/Prev
-map('<Alt-j>', 'R');
-map('<Alt-k>', 'E');
+//map('<Alt-j>', 'R');
+//map('<Alt-k>', 'E');
 
 // --- Misc ---
 // Yank URL w/ one press (disables other yx binds)
-map('y', 'yy');
+//map('y', 'yy');
 
 // Change focused frame
-map('gf', 'w');
+//map('gf', 'w');
 
 // ---- Unmap -----
 // Proxy Stuff
@@ -111,16 +123,16 @@ unmap(';ap');
 iunmap(":");
 
 // Misc
-unmap(';t');
-unmap('si');
-unmap('ga');
-unmap('gc');
-unmap('gn');
-unmap('gr');
-unmap('ob');
-unmap('og');
-unmap('od');
-unmap('oy');
+//unmap(';t');
+//unmap('si');
+//unmap('ga');
+//unmap('gc');
+//unmap('gn');
+//unmap('gr');
+//unmap('ob');
+//unmap('og');
+//unmap('od');
+//unmap('oy');
 
 // ---- Search Engines -----
 removeSearchAlias('b', 's');
