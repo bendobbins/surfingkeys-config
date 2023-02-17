@@ -3,12 +3,11 @@
 // Uncomment to enable
 
 // Tomorrow-Night
-/* -- DELETE LINE TO ENABLE THEME
+
 Hints.style('border: solid 2px #373B41; color:#52C196; background: initial; background-color: #1D1F21;');
 Hints.style("border: solid 2px #373B41 !important; padding: 1px !important; color: #C5C8C6 !important; background: #1D1F21 !important;", "text");
 Visual.style('marks', 'background-color: #52C19699;');
 Visual.style('cursor', 'background-color: #81A2BE;');
--- DELETE LINE TO ENABLE THEME */
 
 // Nord
 /* -- DELETE LINE TO ENABLE THEME
